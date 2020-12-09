@@ -1,0 +1,77 @@
+.jumbotron {
+  background-image: url(../img/slide-1.jpg);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #ff4550;
+  
+  margin-top: 30px;
+}
+
+.jumbotron .rettangolo {
+  width: 500px;
+  height: 100%;
+  background-color: #ff4550;
+}
+
+#popular_courses {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#limitless_learning {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  background-image: url(../img/bg.png);
+  /* background-size: contain; */
+  height: 400px;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+
+#recent_courses .deck_three {
+  margin-top: 30px;
+}
+
+#subscribe_newsletter {
+  background-color: #ff4550;
+  height: 80px;
+}
+
+#popular_courses {
+  background-color: #dde6eb;
+}
+
+#investing {
+  background-image: url(../img/testimonial-1.jpg);
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+#investing .text_box {
+  background-color: white;
+  height: 350px;
+}
+
+
+
+
+/* DEBUG */
+.debug .top_header .container{
+  border: 1px solid coral;
+}
+
+.debug .col {
+  border: 1px solid black;
+  height: 30px;
+
+}
+
+.debug .bottom_header .col{
+  height: 50px;
+  background-color: #292f47;
+}

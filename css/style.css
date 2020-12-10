@@ -69,18 +69,60 @@
   transform: translate(0, -50%);
 }
 
-#limitless_box .my_button {
+.my_button {
   border-radius: 20px;
 }
 
 #recent_courses .deck_three {
   margin-top: 30px;
 }
+ #recent_courses h1 {
+   font-weight: bold;
+   margin-top: 10px;
+ }
+/* per la lista orizzontale */
+#recent_courses #menu_recent li{
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: smaller; 
+  text-decoration: none;
+}
+
+#recent_courses #menu_recent {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#recent_courses #menu_recent li a {
+  text-decoration: none;
+  color: #387480;
+}
+
+#recent_courses .my_button {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 
 #subscribe_newsletter {
   background-color: #ff4550;
-  height: 80px;
+  height: 120px;
 }
+#subscribe_newsletter {
+  color: white;
+
+}
+#subscribe_newsletter h5{
+  font-weight: bold;
+  font-size: small;
+  
+}
+
+#subscribe_newsletter #newsletter_text {
+  font-size: smaller;
+}
+
 
 #popular_courses {
   background-color: #dde6eb;

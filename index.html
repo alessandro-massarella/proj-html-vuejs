@@ -294,17 +294,17 @@
               <h1 class="text-center">Recent courses</h1>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <ul>
-                <li>All Categories</li>
-                <li>Business</li>
-                <li>Design</li>
-                <li>Development</li>
-                <li>IT & Software</li>
-                <li>Lifestyle</li>
-                <li>Marketing</li>
-                <li>Office Productivity</li>
+          <div class="row justify-content-center">
+            <div class="col offset-1">
+              <ul id="menu_recent">
+                <li><a href="#">All Categories</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">IT & Software</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Office Productivity</a></li>
               </ul>
             </div>
           </div>
@@ -594,15 +594,38 @@
 
             </div> <!-- fine card deck -->
           </div>
+          <div class="row justify-content-center">
+            <div class="col-2 d-flex justify-content-center">
+              <a href="#" type="button" class="btn btn-danger my_button">SHOW ALL</a>
+            </div>
+          </div>
         </div>
-        
       </div>
 
       <!-- subscribe newsletter -->
-      <div id="subscribe_newsletter">
-        <div class="container">
+      <div id="subscribe_newsletter" class="d-flex align-items-center">
+        <div class="container text_box">
           <div class="row">
-            <div class="col-7">
+            <div class="col-7 d-flex flex-column justify-content-center">
+              <div id="newsletter_text">
+                <h5>Subscribe our newsletter</h5>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus amet suscipit deleniti fugit at? Dolor deleniti
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas accusantium nostrum, laborum reprehenderit pariatur hic ipsa tenetur autem.</p> -->
+              </div>
+            </div>
+            <div id="mail_text" class="col-5 d-flex flex-column justify-content-center">
+              <h5>YOUR E-MAIL ADDRESS</h5>
+              <div>
+                <input type="text">
+                <button>SUBSCRIBE</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- <div class="container">
+          <div class="row">
+            <div class="col-7 d-flex flex-column">
               <h5>Subscribe our newsletter</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas accusantium nostrum, laborum reprehenderit pariatur hic ipsa tenetur autem.</p>
             </div>
@@ -612,7 +635,7 @@
               <button>SUBSCRIBE</button>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <!-- popular courses -->

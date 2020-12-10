@@ -34,8 +34,11 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+/* dimensioni font delle card */
 #popular_dev_courses .card,
-#recent_courses .card {
+#recent_courses .card,
+#popular_courses .card {
   font-size: x-small;
 }
 
@@ -123,11 +126,70 @@
   font-size: smaller;
 }
 
+#mail_text h5{
+  font-weight: lighter;
+}
+
+#mail_text button {
+  background-color: #517993;
+  border: none;
+  color: white;
+  height: 30px;
+  font-size: smaller;
+
+}
+
+#mail_text input {
+  border: none;
+  height: 30px;
+  font-size: smaller;
+  padding-left: 5px;
+}
+
 
 #popular_courses {
   background-color: #dde6eb;
 }
 
+#popular_courses h2 {
+  margin-top: 50px;
+  font-weight: bolder;
+}
+
+#popular_courses .arrow_box {
+  border: 1px solid lightgrey;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  color: gray;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* 2 CARDS SECTION */
+#two_cards_section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#two_cards_section .my_card_body {
+  padding: 60px;
+  height: 250px;
+}
+#two_cards_section img {
+  margin-right: 30px;
+  width: 150px;
+}
+#two_cards_section h4 {
+  font-weight: bolder;
+}
+#two_cards_section p {
+  font-size: smaller;
+  color: gray;
+}
+#two_cards_section a {
+  font-size: smaller;
+  font-weight: bold;
+}
 .investing {
   background-image: url(../img/testimonial-1.jpg);
   height: 450px;

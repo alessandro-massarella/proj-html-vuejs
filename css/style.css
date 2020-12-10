@@ -44,7 +44,7 @@
   background-color: #dde6eb;
 }
 
-#investing {
+.investing {
   background-image: url(../img/testimonial-1.jpg);
   height: 450px;
   background-repeat: no-repeat;
@@ -52,10 +52,32 @@
   background-position: right;
 }
 
-#investing .text_box {
+.investing .text_box {
   background-color: white;
   height: 350px;
+  width: 550px;
+
+  margin-left: 200px;
 }
+
+/* FOOTER */
+footer {
+  background-color:  #292f47;
+}
+
+footer #f_section1 {
+  height: 200px;
+  border-bottom: 1px solid darkgrey;
+}
+footer #f_section2 {
+  height: 40px;
+}
+
+#f_section1 .debug {
+  border: 1px solid black;
+  height: 150px;
+  margin-top: 40px;
+} 
 
 
 

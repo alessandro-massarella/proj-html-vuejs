@@ -1,25 +1,52 @@
-.jumbotron {
+.my_jumbotron {
+  height: 300px;
   background-image: url(../img/slide-1.jpg);
-  background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-  background-color: #ff4550;
-  
+  background-size: contain;
+
   margin-top: 30px;
+  position: relative;
+
 }
 
-.jumbotron .rettangolo {
-  width: 500px;
-  height: 100%;
-  background-color: #ff4550;
+.my_jumbotron .trapezoid {
+  display: inline-block;
+	height: 0;
+	width: 0;
+  border-bottom: 300px solid #FF4136;
+	border-left: 550px solid #FF4136;
+  border-right: 200px solid transparent;
+}
+.my_jumbotron .text {
+  width: 400px;
+  color: white;
+}
+.my_jumbotron .jumbotron_text {
+ position: absolute;
+ top: 50%;
+ left: 10%;
+ transform: translate(0, -50%);
 }
 
-#popular_courses {
+
+#popular_dev_courses {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+#popular_dev_courses .card,
+#recent_courses .card {
+  font-size: x-small;
+}
+
+.line {
+  width: 100%;
+  background-color:lightgrey;
+  height: 1px;
+}
 
 #limitless_learning {
+  position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
 
@@ -29,6 +56,21 @@
   background-size: cover;
 
   background-repeat: no-repeat;
+}
+
+#limitless_box {
+  width: 400px;
+  /* height: 300px; */
+  /* border: 1px solid black; */
+
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(0, -50%);
+}
+
+#limitless_box .my_button {
+  border-radius: 20px;
 }
 
 #recent_courses .deck_three {

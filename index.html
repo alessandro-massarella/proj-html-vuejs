@@ -15,64 +15,80 @@
   </head>
   <body>
     <!-- SEZIONE HEADER DIVISA IN 3 PARTI -->
-    <header class="debug">
+    <header id="headerApp">
       <!-- header top -->
       <div class="top_header">
         <div class="container">
-          <div class="row">
-            <div class="col-7">
-            </div>
+          <div class="row d-flex align-items-center">
             <div class="col">
+              <!-- menu dropdown -->
+              <div class="my_select">
+                <select name="" id="">
+                  <option v-for="language in languages" value="">{{ language }} </option>
+                </select>
+              </div>
+            </div>
+            <!-- lista menu : -->
+            <div class="col-10 d-flex align-items-center justify-content-end menu_list">
+              <ul>
+                <li v-for="element in menu_list"><a href="#">{{ element }}</a></li>
+              </ul>
+              <!-- lista icone -->
+              <div class="list_icon">
+                <ul>
+                  <li v-for="social in socialNetwork">
+                    <a href=""><img :src="social" alt=""></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <!-- header_middle/NAV -->
       <div class="middle_header">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light bg-">
+          <!-- logo -->
+          <nav class="navbar navbar-expand-lg navbar-light bg- ">
             <a class="navbar-brand" href="#">
               <img src="img/MasterStudy.svg" width="300" height="30" alt="">
             </a>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
-        </div>
-        
 
-      </div>
+            <span id="category_text" class=""><a href=""><i class="fa fa-bars" aria-hidden="true"></i> CATEGORY </a> </span>
+
+            <!-- search -->
+            <div id="input_search">
+              <input type="text" placeholder="Search courses"><button><i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="navbar_icon">
+              <ul>
+                <li><a href=""><i class="fa fa-bullhorn" aria-hidden="true"></i> Become an instructor</a></li>
+                <li><a href=""><i class="fa fa-briefcase" aria-hidden="true"></i> For Enterprise</a></li>
+              </ul>
+            </div>
+
+            <!-- log in -->
+            <a href="#" class="margin_lr">            
+              <i class="fa fa-user" aria-hidden="true"></i>
+              Log in
+            </a>
+            <a href="#" type="button" class="btn btn-danger my_button margin_lr">SIGN UP</a>
+
+            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+            
+          </nav>
+      </div> <!-- fine middle -->
+
+
       <!-- header bottom -->
       <div class="bottom_header">
         <div class="container-fluid">
           <div class="row">
-            <div class="col">
+            <div class="col d-flex justify-content-center align-items-end">
+              <ul>
+                <li v-for="item in thirdMenu"> <a href="">{{ item }}</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -847,48 +863,39 @@
     </div>
 
     <!-- FOOTER -->
-    <footer>
+    <footer id="footerApp">
       <div id="f_section1">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-3 debug">
+              <h6>ABOUT</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, consequatur alias placeat accusantium non exercitationem praesentium ex qui!</p>
               
             </div>
             <div class="col-2 debug">
+              <h6>CONTACT</h6>
+              <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facilis illo magni assumenda velit </P>
               
             </div>
-            <div class="col-3 debug">
-              
+            <div class="col-3 debug social_foot">
+              <h6>SOCIAL NETWORK</h6>
+              <div class="loghi">
+                <ul class="justify_content-start">
+                  <li v-for="el in social">
+                    <a href="#">
+                      <img :src="el" alt="">
+                    </a>  
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col-2 debug">
-              
+            <div class="col-2 logo debug">
+              <img src="img/udemy_logo.jpg" alt="udemy">
             </div>
           </div>
-
         </div>
-
-
-      </div>
-
-      <div id="f_section2">
-        <div class="container">
-
-        </div>
-
       </div>
     </footer>
-
-
-
-    
-
-
-
-
-
-
-
-
 
 
 

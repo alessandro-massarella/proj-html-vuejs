@@ -1,3 +1,85 @@
+/* HEADER SECTION */
+.my_select select {
+  background-color: transparent;
+  border: transparent;
+  outline: transparent;
+  color: gray;
+}
+.top_header {
+  border-bottom: 1px solid lightgrey;
+}
+.margin_lr {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+header .menu_list li,
+header .list_icon li,
+.middle_header li,
+.bottom_header li {
+  display: inline;
+  margin-left: 12px;
+  font-size: small;
+}
+header .menu_list li a,
+header .list_icon li,
+header .middle_header a {
+  text-decoration: none;
+  color: gray;
+}
+header .list_icon img {
+  width: 15px;
+}
+
+/* input search style */
+#input_search button {
+  background-color: #517993;
+  border: none;
+  color: white;
+  height: 30px;
+  font-size: smaller;
+}
+#input_search input {
+  border: none;
+  height: 30px;
+  font-size: smaller;
+  padding-left: 5px;
+  background-color: #dde6eb;
+  width: 300px;
+  margin-left: 10px;
+}
+
+.middle_header  .my_button {
+  font-weight: bold;
+  font-size: smaller;
+}
+
+header {
+  font-size: smaller;
+}
+
+.navbar_icon {
+  margin: auto;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.menu_list {
+  padding-top: 11px;
+}
+
+/* BOTTOM HEADER */
+.bottom_header .col{
+  height: 50px;
+  background-color: #292f47;
+} 
+
+.bottom_header li a {
+  color: lightgray;
+  margin-left: 50px;
+}
+
+
+
 .my_jumbotron {
   height: 300px;
   background-image: url(../img/slide-1.jpg);
@@ -232,26 +314,35 @@ footer #f_section2 {
 }
 
 #f_section1 .debug {
-  border: 1px solid black;
   height: 150px;
   margin-top: 40px;
 } 
 
-
-
-
-/* DEBUG */
-.debug .top_header .container{
-  border: 1px solid coral;
+#f_section1 {
+  font-size: smaller;
+  color: white;
 }
 
-.debug .col {
-  border: 1px solid black;
-  height: 30px;
-
+#f_section1 .logo img {
+  width: 200px;
+}
+#f_section1 h6 {
+  font-weight: bold;
 }
 
-.debug .bottom_header .col{
-  height: 50px;
-  background-color: #292f47;
+#f_section1 li a {
+  text-decoration: none;
+}
+
+
+#f_section1 li {
+  display: inline;
+}
+#f_section1 .social_foot img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+#f_section1 .social_foot h6 {
+  margin-left: 40px;
 }
